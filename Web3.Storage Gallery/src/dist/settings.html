@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.17e50649.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web3.Storage | Image gallery example</title>
+    <script type="module" crossorigin src="assets/settings.bc29176f.js"></script>
+    <link rel="modulepreload" href="assets/storage.52eb1b12.js">
+    <link rel="modulepreload" href="assets/vendor.061fb27f.js">
+    <link rel="stylesheet" href="assets/storage.669827c3.css">
+  </head>
+  <body>
+    <header>
+      <a href="https://web3.storage">
+        <img src="assets/web3storage.175ac99b.svg" style="height:1.8rem" />
+      </a>
+      <div class="spacer"></div>
+      <nav>
+        <a href="./index.html">Upload</a>
+        <a href="./gallery.html">Gallery</a>
+        <span class="nav-current-page">Settings</span>
+      </nav>
+    </header>
+    <div id="app">
+      <div id="token-ui">
+        <form id="token-form">
+
+          <div id="token-spinner" class="hidden">
+            <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+          </div>
+
+          <div id="token-input-wrapper">
+            <label for="token-input">Enter your Token address</label>
+
+            <p>
+              You need your Token address to see file content.
+            <br/>
+              To get access <a href="https://docs.web3.storage/how-tos/generate-api-token/">Pay to receive Token here</a> if you don't already have one!
+            </p>
+
+            <input id="token-input" placeholder="eyJhb..." />
+            <button id="token-save-button"><span class="fontawesome-save"></span>Save Token</button>
+
+
+          </div>
+
+          <div id="saved-token-wrapper" class="hidden">
+            <label for="saved-token">Your API token</label>
+            <input id="saved-token" disabled="true" />
+
+            <button id="token-delete-button"><span class="fontawesome-trash"></span>Delete Token</button>
+
+            <p>
+              Your API token is saved in your browser's local storage.
+              Now you can <a href="./index.html">upload an image</a> or <a href="./gallery.html">view your gallery</a>!
+            </p>
+          </div>
+        </form>
+
+        <div id="about-message">
+          <h3>Welcome to Muse Filez</h3>
+          <p>
+            This app is powered by <a href="https://web3.storage">Web3.Storage</a>, decentralized data storage.
+          </p>
+          <p>
+            Find out more about <a href="https://filecoin.io">Filecoin</a>
+          </p>
+          <p>
+            Behind the scenes, Web3.Storage is backed by <a href="https://filecoin.io">Filecoin</a> and makes content available via <a href="https://ipfs.io">IPFS</a> leveraging the unique properties of each network.
+
+          </p>
+          <p>
+            See the <a href="https://docs.web3.storage">documentation</a> to learn more!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="snackbar"></div>
+    
+  </body>
+</html>
