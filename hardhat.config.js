@@ -8,14 +8,12 @@ require("dotenv").config();
 
 module.exports = {
   defaultNetwork: "hardhat",
-  networks: {
+  networks: { 
+    url: {"https://data-seed-prebsc-1-s1.binance.org:8545",
     hardhat: {
-      chainId: 31337,
+      chainId: 97,
     },
-
-    localhost: {
-      chainId: 31337,
-    },
+  },
   },
   namedAccounts: {
     deployer: {
