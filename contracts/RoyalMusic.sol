@@ -6,7 +6,8 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-//Royalty NFT contract
+//Royalty NFT contract 
+// Will be deployed on BNB Chain
 
 contract RoyalMusic is ERC721URIStorage, ERC2981, Ownable {
   using Counters for Counters.Counter;
