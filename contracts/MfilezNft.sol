@@ -11,7 +11,7 @@ contract MfilezNft is ERC721 {
     constructor() ERC721("MuseFilez", "MFZ") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "API KEY";
+        return "https://api.jsonbin.io/v3/b/64653be28e4aa6225e9ef9fa";
     }
 
     function mint(address to)
