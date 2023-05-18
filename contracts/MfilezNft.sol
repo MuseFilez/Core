@@ -4,6 +4,8 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
+// Contract address on BSC Testnet 0x850Ee906630961bbF4867260FFe66473B13a0A86
+
 contract MfilezNft is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIdCounter;
